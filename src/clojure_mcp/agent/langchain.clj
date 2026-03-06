@@ -110,7 +110,7 @@
 (defn agent-model []
   (cond
     (System/getenv "ANTHROPIC_API_KEY")
-    (create-anthropic-model AnthropicChatModelName/CLAUDE_SONNET_4_20250514)
+    (create-anthropic-model "claude-opus-4-6")
     (System/getenv "GEMINI_API_KEY")
     (create-gemini-model "gemini-2.5-flash")
     (System/getenv "OPENAI_API_KEY")
